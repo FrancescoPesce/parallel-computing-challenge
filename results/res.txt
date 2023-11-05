@@ -1,0 +1,234 @@
+default-shared-block32-shared32:
+minimum time: 3.82557 ms
+maximum time: 3.82557 ms
+average time: 3.82557 ms
+average speedup: 2.580974928287878x
+
+default-shared-block32-shared64:
+minimum time: 3.74138 ms
+maximum time: 3.74138 ms
+average time: 3.74138 ms
+average speedup: 2.639053038293426x
+
+default-shared-block32-shared128:
+minimum time: 3.7263 ms
+maximum time: 3.7263 ms
+average time: 3.7263 ms
+average speedup: 2.649733047905498x
+
+default-shared-block32-shared256:
+minimum time: 3.67053 ms
+maximum time: 3.67053 ms
+average time: 3.67053 ms
+average speedup: 2.6899930681428184x
+
+default-shared-block32-shared512:
+minimum time: 3.66294 ms
+maximum time: 3.66294 ms
+average time: 3.66294 ms
+average speedup: 2.69556701895479x
+
+default-shared-block32-shared1024:
+minimum time: 3.71584 ms
+maximum time: 3.71584 ms
+average time: 3.71584 ms
+average speedup: 2.6571919825423747x
+
+default-shared-block32-shared2048:
+minimum time: 3.68608 ms
+maximum time: 3.68608 ms
+average time: 3.68608 ms
+average speedup: 2.6786451342375255x
+
+default-shared-block32-shared4096:
+minimum time: 3.69168 ms
+maximum time: 3.69168 ms
+average time: 3.69168 ms
+average speedup: 2.6745818316891654x
+
+default-shared-block32-shared8192:
+minimum time: 4.36746 ms
+maximum time: 4.36746 ms
+average time: 4.36746 ms
+average speedup: 2.260742000249632x
+
+default-shared-block64-shared64:
+minimum time: 3.8319 ms
+maximum time: 3.8319 ms
+average time: 3.8319 ms
+average speedup: 2.5767113589629838x
+
+default-shared-block64-shared128:
+minimum time: 3.80448 ms
+maximum time: 3.80448 ms
+average time: 3.80448 ms
+average speedup: 2.5952824712996936x
+
+default-shared-block64-shared256:
+minimum time: 3.6759 ms
+maximum time: 3.6759 ms
+average time: 3.6759 ms
+average speedup: 2.6860633467750095x
+
+default-shared-block64-shared512:
+minimum time: 3.70246 ms
+maximum time: 3.70246 ms
+average time: 3.70246 ms
+average speedup: 2.6667945788503475x
+
+default-shared-block64-shared1024:
+minimum time: 3.71568 ms
+maximum time: 3.71568 ms
+average time: 3.71568 ms
+average speedup: 2.657306403245236x
+
+default-shared-block64-shared2048:
+minimum time: 3.7001 ms
+maximum time: 3.7001 ms
+average time: 3.7001 ms
+average speedup: 2.668495515367222x
+
+default-shared-block64-shared4096:
+minimum time: 3.74957 ms
+maximum time: 3.74957 ms
+average time: 3.74957 ms
+average speedup: 2.6332886854786706x
+
+default-shared-block64-shared8192:
+minimum time: 3.88032 ms
+maximum time: 3.88032 ms
+average time: 3.88032 ms
+average speedup: 2.5445582468482644x
+
+default-shared-block128-shared128:
+minimum time: 3.91117 ms
+maximum time: 3.91117 ms
+average time: 3.91117 ms
+average speedup: 2.5244876229901174x
+
+default-shared-block128-shared256:
+minimum time: 3.75837 ms
+maximum time: 3.75837 ms
+average time: 3.75837 ms
+average speedup: 2.627122996514515x
+
+default-shared-block128-shared512:
+minimum time: 3.728 ms
+maximum time: 3.728 ms
+average time: 3.728 ms
+average speedup: 2.6485247468911632x
+
+default-shared-block128-shared1024:
+minimum time: 3.79974 ms
+maximum time: 3.79974 ms
+average time: 3.79974 ms
+average speedup: 2.598519966210914x
+
+default-shared-block128-shared2048:
+minimum time: 3.79965 ms
+maximum time: 3.79965 ms
+average time: 3.79965 ms
+average speedup: 2.598581515773889x
+
+default-shared-block128-shared4096:
+minimum time: 3.76886 ms
+maximum time: 3.76886 ms
+average time: 3.76886 ms
+average speedup: 2.6198108330928336x
+
+default-shared-block128-shared8192:
+minimum time: 3.81229 ms
+maximum time: 3.81229 ms
+average time: 3.81229 ms
+average speedup: 2.5899656784794067x
+
+default-shared-block256-shared256:
+minimum time: 4.13267 ms
+maximum time: 4.13267 ms
+average time: 4.13267 ms
+average speedup: 2.3891818742871456x
+
+default-shared-block256-shared512:
+minimum time: 3.94266 ms
+maximum time: 3.94266 ms
+average time: 3.94266 ms
+average speedup: 2.504324556621737x
+
+default-shared-block256-shared1024:
+minimum time: 3.91632 ms
+maximum time: 3.91632 ms
+average time: 3.91632 ms
+average speedup: 2.5211678964972877x
+
+default-shared-block256-shared2048:
+minimum time: 4.02394 ms
+maximum time: 4.02394 ms
+average time: 4.02394 ms
+average speedup: 2.4537394335925136x
+
+default-shared-block256-shared4096:
+minimum time: 4.02048 ms
+maximum time: 4.02048 ms
+average time: 4.02048 ms
+average speedup: 2.455851106437604x
+
+default-shared-block256-shared8192:
+minimum time: 4.02928 ms
+maximum time: 4.02928 ms
+average time: 4.02928 ms
+average speedup: 2.45048749563452x
+
+default-shared-block512-shared512:
+minimum time: 4.68403 ms
+maximum time: 4.68403 ms
+average time: 4.68403 ms
+average speedup: 2.1079498330305864x
+
+default-shared-block512-shared1024:
+minimum time: 4.6329 ms
+maximum time: 4.6329 ms
+average time: 4.6329 ms
+average speedup: 2.131213765980327x
+
+default-shared-block512-shared2048:
+minimum time: 4.65498 ms
+maximum time: 4.65498 ms
+average time: 4.65498 ms
+average speedup: 2.121104764448023x
+
+default-shared-block512-shared4096:
+minimum time: 5.29894 ms
+maximum time: 5.29894 ms
+average time: 5.29894 ms
+average speedup: 1.8633349795261425x
+
+default-shared-block512-shared8192:
+minimum time: 5.32179 ms
+maximum time: 5.32179 ms
+average time: 5.32179 ms
+average speedup: 1.8553344375501961x
+
+default-shared-block1024-shared1024:
+minimum time: 6.14042 ms
+maximum time: 6.14042 ms
+average time: 6.14042 ms
+average speedup: 1.6079845118754512x
+
+default-shared-block1024-shared2048:
+minimum time: 6.08778 ms
+maximum time: 6.08778 ms
+average time: 6.08778 ms
+average speedup: 1.6218884809257657x
+
+default-shared-block1024-shared4096:
+minimum time: 6.09046 ms
+maximum time: 6.09046 ms
+average time: 6.09046 ms
+average speedup: 1.6211747973733113x
+
+default-shared-block1024-shared8192:
+minimum time: 7.2135 ms
+maximum time: 7.2135 ms
+average time: 7.2135 ms
+average speedup: 1.3687807938462964x
+

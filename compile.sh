@@ -1,0 +1,2 @@
+nvcc main.cu -maxrrregcount=16 -o main --std c++11 -DTIMING_KERNEL_TIME -DTIMING_FULL_LOGGING -DCHECK_CORRECTNESS -DSHARED_MEMORY
+

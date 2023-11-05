@@ -1,0 +1,42 @@
+default-base:
+minimum time: 4.6617 ms
+maximum time: 4.73142 ms
+average time: 4.686174499999999 ms
+average speedup: 2.106728526647909x
+
+default-shared:
+minimum time: 3.99152 ms
+maximum time: 4.06042 ms
+average time: 4.028550999999998 ms
+average speedup: 2.4506323737740954x
+
+oldnew-base:
+minimum time: 4.51667 ms
+maximum time: 4.57565 ms
+average time: 4.538935999999999 ms
+average speedup: 2.1750686724818338x
+
+oldnew-shared:
+minimum time: 4.35693 ms
+maximum time: 4.40918 ms
+average time: 4.371682 ms
+average speedup: 2.2582835393791227x
+
+distances-base:
+minimum time: 2.11805 ms
+maximum time: 2.16166 ms
+average time: 2.13375 ms
+average speedup: 4.626829525483305x
+
+distances-shared:
+minimum time: 2.34691 ms
+maximum time: 2.38589 ms
+average time: 2.360511 ms
+average speedup: 4.1823560661229715x
+
+coo-base:
+minimum time: 3.41075 ms
+maximum time: 3.46992 ms
+average time: 3.446016 ms
+average speedup: 2.8649018170548253x
+

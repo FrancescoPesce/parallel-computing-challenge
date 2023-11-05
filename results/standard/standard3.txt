@@ -1,0 +1,56 @@
+default-base:
+minimum time: 0.239328 ms
+maximum time: 0.266528 ms
+average time: 0.24775359999999996 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DBLOCK_SIZE=32
+average speedup: 45.06920888334215x
+
+default-shared:
+minimum time: 0.241536 ms
+maximum time: 0.25728 ms
+average time: 0.2495056 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DSHARED_MEMORY -DBLOCK_SIZE=32 -DSHARED_CAPACITY=256
+average speedup: 44.752738014697854x
+
+oldnew-base:
+minimum time: 0.46352 ms
+maximum time: 0.5024 ms
+average time: 0.473888 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DBLOCK_SIZE=128
+average speedup: 23.562653517286776x
+
+oldnew-shared:
+minimum time: 0.529152 ms
+maximum time: 0.545856 ms
+average time: 0.5377296 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DSHARED_MEMORY -DBLOCK_SIZE=128 -DSHARED_CAPACITY=1024
+average speedup: 20.765192673046073x
+
+distances-base:
+minimum time: 0.26336 ms
+maximum time: 0.280512 ms
+average time: 0.270304 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DBLOCK_SIZE=512
+average speedup: 41.309261979104996x
+
+distances-shared:
+minimum time: 0.303872 ms
+maximum time: 0.315168 ms
+average time: 0.30888640000000006 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DSHARED_MEMORY -DBLOCK_SIZE=512 -DSHARED_CAPACITY=2048
+average speedup: 36.149402336910896x
+
+coo-base:
+minimum time: 0.385344 ms
+maximum time: 0.42592 ms
+average time: 0.3943312 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DBLOCK_SIZE=128
+average speedup: 28.316447569961486x
+
+coo-shared:
+minimum time: 0.53296 ms
+maximum time: 0.58752 ms
+average time: 0.5465263999999999 ms
+compile command: nvcc main.cu -o main --std c++11 -DSORT_INPUT -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DSHARED_MEMORY -DBLOCK_SIZE=64 -DSHARED_CAPACITY=64
+average speedup: 20.430959510830583x
+
