@@ -19,23 +19,7 @@
 #include "cpu.hpp"
 #endif
 
-//nvcc main.cu -o main --std c++11 -D[flags]
-/*flags:
-NO_SORT_INPUT
-SAVE_OUTPUT
-PRINT_GRAPH
-CHECK_CORRECTNESS
-TIMING_TOTAL_TIME (cannot be used with TIMING_LOOP_TIME, TIMING_KERNEL_TIME)
-TIMING_LOOP_TIME (cannot be used with TIMING_TOTAL_TIME, TIMING_KERNEL_TIME)
-TIMING_KERNEL_TIME (cannot be used with TIMING_TOTAL_TIME, TIMING_LOOP_TIME)
-TIMING_FULL_LOGGING (needs TIMING_KERNEL_TIME)
-SHARED_MEMORY
-BLOCK_SIZE (default 512)
-SHARED_CAPACITY (default 1024, only relevant with SHARED_MEMORY)
-COO
-NODES_OLDNEW
-NODES_DISTANCES
-*/
+
 
 int main(int argc, char **argv) {
 	#ifdef SAVE_OUTPUT
