@@ -1,0 +1,12 @@
+Device Number: 0
+  Device name: Tesla T4
+  max Blocks Per MultiProcessor: 16
+  max Threads Per MultiProcessor: 1024
+  max Threads Per Block: 1024
+  num SM: 40
+  num bytes sharedMem Per Block: 49152
+  num bytes sharedMem Per Multiprocessor: 65536
+  Memory Clock Rate (KHz): 5001000
+  Memory Bus Width (bits): 256
+  Peak Memory Bandwidth (GB/s): 320.064
+

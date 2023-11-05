@@ -1,0 +1,12 @@
+Device Number: 0
+  Device name: NVIDIA GeForce RTX 2060
+  max Blocks Per MultiProcessor: 16
+  max Threads Per MultiProcessor: 1024
+  max Threads Per Block: 1024
+  num SM: 30
+  num bytes sharedMem Per Block: 49152
+  num bytes sharedMem Per Multiprocessor: 65536
+  Memory Clock Rate (KHz): 5501000
+  Memory Bus Width (bits): 192
+  Peak Memory Bandwidth (GB/s): 264.048
+

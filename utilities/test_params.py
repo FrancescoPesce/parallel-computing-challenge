@@ -9,7 +9,7 @@ flag_configs = {"default-base":[], "default-shared":["-DSHARED_MEMORY"],
            "coo-base":["-DCOO"],"coo-shared":["-DCOO","-DSHARED_MEMORY"]}      
            
 block_sizes = [32, 64, 128, 256, 512, 1024]
-max_mem_size = 8192 #coo: max is half of this amount, default: there is no need for it to be a power of 2, but only those will be tested.
+max_mem_size = 8192 #coo: max is calculated as half of this amount, default: there is no need for it to be a power of 2, but only powers of two will be tested.
        
 num_iter = 1
 
