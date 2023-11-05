@@ -6,7 +6,7 @@ base_command = "nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME"
 flag_configs = {"default-base":[], "default-shared":["-DSHARED_MEMORY"],
            "oldnew-base":["-DNODES_OLDNEW"], "oldnew-shared":["-DNODES_OLDNEW","-DSHARED_MEMORY"],
            "distances-base":["-DNODES_DISTANCES"],"distances-shared":["-DNODES_DISTANCES","-DSHARED_MEMORY"],
-           "coo-base":["-DCOO"],"coo-shared":["-DCOO","-DSHARED_MEMORY"]       
+           "coo-base":["-DCOO"],"coo-shared":["-DCOO","-DSHARED_MEMORY"]}      
            
 block_sizes = [32, 64, 128, 256, 512, 1024]
 max_mem_size = 8192 #coo: max is half of this amount, default: there is no need for it to be a power of 2, but only those will be tested.
@@ -17,11 +17,6 @@ filename = "resources/bcsstk30_parsed.mtx"
 out_filename = "res.txt"
 
 temp_file = "temp.txt"
-
-#default: block_size: lower = better, shared_memory: 32:256, 64,128:512
-#oldnew: block_size: normale dibattibile, shared fino a 128 meglio, poi dibattibile, shared_memory: 32,64:512 128,256,512:1024
-#distances: block_size: fino a 512 dibattibile, shared_memory: 32,64:512 128:1024, 256:2048, 512,1024:dibattibile
-#coo: block_size: normale 128-256, shared 64-512, shared_memory: lower = better
 
 
 
@@ -40,7 +35,7 @@ for flag_config in flag_configs:
 				flags.append("-DSHARED_CAPACITY=" + str(mem_size))
 				configs[name] = flags
 		else:
-			name = flag_config + "-block " + str(block_size)
+			name = flag_config + "-block" + str(block_size)
 			flags = flag_configs[flag_config].copy()
 			flags.append("-DBLOCK_SIZE=" + str(block_size))
 			configs[name] = flags

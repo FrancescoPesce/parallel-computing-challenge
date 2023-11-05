@@ -20,7 +20,7 @@ if "symmetric" in data[0]:
 
 #get the input	
 parsingHeader = True
-isBInary = False
+isBinary = False
 for idx, line in enumerate(data):
 	if parsingHeader and line[0] != '%':
 		parsingHeader = False
