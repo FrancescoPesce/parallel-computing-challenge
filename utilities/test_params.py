@@ -1,7 +1,7 @@
 import os
 from math import log2
 
-base_command = "nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME"
+base_command = "nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME"
 
 flag_configs = {"default-base":[], "default-shared":["-DSHARED_MEMORY"],
            "oldnew-base":["-DNODES_OLDNEW"], "oldnew-shared":["-DNODES_OLDNEW","-DSHARED_MEMORY"],
@@ -13,7 +13,7 @@ max_mem_size = 8192 #coo: max is calculated as half of this amount, default: the
        
 num_iter = 1
 
-filename = "resources/bcsstk30_parsed.mtx"
+filename = "parallel-computing-challenge/resources/bcsstk30_parsed.mtx"
 out_filename = "res.txt"
 
 temp_file = "temp.txt"
@@ -91,3 +91,4 @@ with open(out_filename, "w") as f:
 				unit = "x"
 			f.write(label + ": " + str(value) + unit + "\n")
 		f.write("\n")
+
