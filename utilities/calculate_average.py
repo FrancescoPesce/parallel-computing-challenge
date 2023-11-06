@@ -10,6 +10,8 @@ filename = args.input_filename
 num_iter = int(args.num_iterations)
 num_impl = int(args.num_implementations)
 
+
+#Start editing here
 base_command = "nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS"
 
 ordering = {"default-base":2,"default-shared":1,"oldnew-base":4,"oldnew-shared":7,"distances-base":0,"distances-shared":5,"coo-base":3,"coo-shared":6}
@@ -20,6 +22,7 @@ configs = {"default-base":["-DBLOCK_SIZE=32"], "default-shared":["-DSHARED_MEMOR
            "coo-base":["-DCOO","-DBLOCK_SIZE=128"],"coo-shared":["-DCOO","-DSHARED_MEMORY","-DBLOCK_SIZE=64","-DSHARED_CAPACITY=64"]}
 
 temp_file = "temp.txt"
+#end editing here
 
 
 

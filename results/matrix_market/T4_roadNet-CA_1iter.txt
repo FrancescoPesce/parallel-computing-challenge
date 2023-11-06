@@ -1,0 +1,55 @@
+default-base:
+minimum time: 9.65485 ms
+maximum time: 9.65485 ms
+average time: 9.65485 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DBLOCK_SIZE=32
+average speedup: 12.210184518661604x
+
+default-shared:
+minimum time: 9.6016 ms
+maximum time: 9.6016 ms
+average time: 9.6016 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DSHARED_MEMORY -DBLOCK_SIZE=32 -DSHARED_CAPACITY=256
+average speedup: 12.277901599733378x
+
+oldnew-base:
+minimum time: 104.067 ms
+maximum time: 104.067 ms
+average time: 104.067 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DBLOCK_SIZE=128
+average speedup: 1.1328038667396965x
+
+oldnew-shared:
+minimum time: 139.984 ms
+maximum time: 139.984 ms
+average time: 139.984 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DSHARED_MEMORY -DBLOCK_SIZE=128 -DSHARED_CAPACITY=1024
+average speedup: 0.8421498171219567x
+
+distances-base:
+minimum time: 41.3327 ms
+maximum time: 41.3327 ms
+average time: 41.3327 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DBLOCK_SIZE=512
+average speedup: 2.8521606379452584x
+
+distances-shared:
+minimum time: 63.8434 ms
+maximum time: 63.8434 ms
+average time: 63.8434 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DSHARED_MEMORY -DBLOCK_SIZE=512 -DSHARED_CAPACITY=2048
+average speedup: 1.8465103675556125x
+
+coo-base:
+minimum time: 171.946 ms
+maximum time: 171.946 ms
+average time: 171.946 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DBLOCK_SIZE=128
+average speedup: 0.6856076907866423x
+
+coo-shared:
+minimum time: 229.962 ms
+maximum time: 229.962 ms
+average time: 229.962 ms
+compile command: nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DSHARED_MEMORY -DBLOCK_SIZE=64 -DSHARED_CAPACITY=64
+average speedup: 0.5126390447117349x
