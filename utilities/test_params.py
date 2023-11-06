@@ -1,6 +1,7 @@
 import os
 from math import log2
 
+#start editing here
 base_command = "nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME"
 
 flag_configs = {"default-base":[], "default-shared":["-DSHARED_MEMORY"],
@@ -17,6 +18,7 @@ filename = "parallel-computing-challenge/resources/bcsstk30_parsed.mtx"
 out_filename = "res.txt"
 
 temp_file = "temp.txt"
+#end editing here
 
 
 

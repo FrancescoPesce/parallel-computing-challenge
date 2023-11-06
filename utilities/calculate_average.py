@@ -11,7 +11,7 @@ num_iter = int(args.num_iterations)
 num_impl = int(args.num_implementations)
 
 
-#Start editing here
+#start editing here
 base_command = "nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS"
 
 ordering = {"default-base":2,"default-shared":1,"oldnew-base":4,"oldnew-shared":7,"distances-base":0,"distances-shared":5,"coo-base":3,"coo-shared":6}

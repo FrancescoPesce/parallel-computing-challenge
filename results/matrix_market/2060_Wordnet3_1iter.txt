@@ -1,0 +1,56 @@
+default-base:
+minimum time: 1.06525 ms
+maximum time: 1.06525 ms
+average time: 1.06525 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DBLOCK_SIZE=32
+average speedup: 4.824047172025345x
+
+default-shared:
+minimum time: 1.21629 ms
+maximum time: 1.21629 ms
+average time: 1.21629 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DSHARED_MEMORY -DBLOCK_SIZE=32 -DSHARED_CAPACITY=256
+average speedup: 4.224992600448905x
+
+oldnew-base:
+minimum time: 0.64752 ms
+maximum time: 0.64752 ms
+average time: 0.64752 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DBLOCK_SIZE=128
+average speedup: 7.936150620830245x
+
+oldnew-shared:
+minimum time: 0.763072 ms
+maximum time: 0.763072 ms
+average time: 0.763072 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DSHARED_MEMORY -DBLOCK_SIZE=128 -DSHARED_CAPACITY=1024
+average speedup: 6.734379259100058x
+
+distances-base:
+minimum time: 0.52432 ms
+maximum time: 0.52432 ms
+average time: 0.52432 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DBLOCK_SIZE=512
+average speedup: 9.800915948275861x
+
+distances-shared:
+minimum time: 0.680384 ms
+maximum time: 0.680384 ms
+average time: 0.680384 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DSHARED_MEMORY -DBLOCK_SIZE=512 -DSHARED_CAPACITY=2048
+average speedup: 7.552817600061141x
+
+coo-base:
+minimum time: 0.245216 ms
+maximum time: 0.245216 ms
+average time: 0.245216 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DBLOCK_SIZE=128
+average speedup: 20.95628445941537x
+
+coo-shared:
+minimum time: 0.36128 ms
+maximum time: 0.36128 ms
+average time: 0.36128 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DSHARED_MEMORY -DBLOCK_SIZE=64 -DSHARED_CAPACITY=64
+average speedup: 14.22391566098317x
+
