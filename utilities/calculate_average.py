@@ -14,7 +14,7 @@ num_impl = int(args.num_implementations)
 #start editing here
 base_command = "nvcc parallel-computing-challenge/src/main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS"
 
-ordering = {"default-base":2,"default-shared":1,"oldnew-base":4,"oldnew-shared":7,"distances-base":0,"distances-shared":5,"coo-base":3,"coo-shared":6}
+ordering = {"default-base":3,"default-shared":1,"oldnew-base":4,"oldnew-shared":7,"distances-base":0,"distances-shared":5,"coo-base":2,"coo-shared":6}
 
 configs = {"default-base":["-DBLOCK_SIZE=32"], "default-shared":["-DSHARED_MEMORY","-DBLOCK_SIZE=32","-DSHARED_CAPACITY=256"],
            "oldnew-base":["-DNODES_OLDNEW","-DBLOCK_SIZE=128"], "oldnew-shared":["-DNODES_OLDNEW","-DSHARED_MEMORY","-DBLOCK_SIZE=128","-DSHARED_CAPACITY=1024"],
