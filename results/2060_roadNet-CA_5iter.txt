@@ -1,0 +1,56 @@
+default-base:
+minimum time: 8.18848 ms
+maximum time: 8.53277 ms
+average time: 8.329632 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DBLOCK_SIZE=32
+average speedup: 19.52631580842947x
+
+default-shared:
+minimum time: 8.00913 ms
+maximum time: 8.16903 ms
+average time: 8.105332 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DSHARED_MEMORY -DBLOCK_SIZE=32 -DSHARED_CAPACITY=256
+average speedup: 20.06667031035866x
+
+oldnew-base:
+minimum time: 101.027 ms
+maximum time: 101.737 ms
+average time: 101.4212 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DBLOCK_SIZE=128
+average speedup: 1.6036787673583037x
+
+oldnew-shared:
+minimum time: 126.678 ms
+maximum time: 128.563 ms
+average time: 127.87660000000001 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_OLDNEW -DSHARED_MEMORY -DBLOCK_SIZE=128 -DSHARED_CAPACITY=1024
+average speedup: 1.2719060797675257x
+
+distances-base:
+minimum time: 38.4539 ms
+maximum time: 38.5818 ms
+average time: 38.525580000000005 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DBLOCK_SIZE=512
+average speedup: 4.221793026866823x
+
+distances-shared:
+minimum time: 56.3204 ms
+maximum time: 56.5662 ms
+average time: 56.39274 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DNODES_DISTANCES -DSHARED_MEMORY -DBLOCK_SIZE=512 -DSHARED_CAPACITY=2048
+average speedup: 2.884183761952336x
+
+coo-base:
+minimum time: 168.056 ms
+maximum time: 179.786 ms
+average time: 177.3382 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DBLOCK_SIZE=128
+average speedup: 0.9171573016981112x
+
+coo-shared:
+minimum time: 201.074 ms
+maximum time: 229.731 ms
+average time: 216.46280000000002 ms
+compile command: nvcc main.cu -o main --std c++11 -DTIMING_KERNEL_TIME -DCHECK_CORRECTNESS -DCOO -DSHARED_MEMORY -DBLOCK_SIZE=64 -DSHARED_CAPACITY=64
+average speedup: 0.751385572948331x
+
